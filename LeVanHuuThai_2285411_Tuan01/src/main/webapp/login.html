@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+<div class="container">
+    <h2>Register</h2>
+    <form action="bai-5" method="POST">
+
+        <!-- Name -->
+        <label>Name <span class="required">*</span></label>
+        <div class="name-fields">
+            <input type="text" placeholder="First" name="first">
+            <input type="text" placeholder="Last" name="last">
+        </div>
+
+        <!-- Username -->
+        <label>Username <span class="required">*</span></label>
+        <input type="text" placeholder="Enter your username" name="username" >
+
+        <!-- Email -->
+        <label>E-mail <span class="required">*</span></label>
+        <input type="email" placeholder="Enter your email" name="email" >
+
+        <!-- Password -->
+        <label>Password <span class="required">*</span></label>
+        <input type="password" placeholder="Enter your password" name="password" >
+
+        <!-- Facebook -->
+        <label>Facebook</label>
+        <input type="url" placeholder="Enter your Facebook profile URL" name="facebook">
+
+        <!-- Short Bio -->
+        <label>Short Bio</label>
+        <textarea rows="4" placeholder="Share a little information about yourself." name="shortBio"></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

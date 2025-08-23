@@ -11,6 +11,12 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+/*
+ * @description
+ * @author: Huu Thai
+ * @date:
+ * @version: 1.0
+ */
 @WebServlet(name = "bai3", value = "/bai-3")
 public class Bai3 extends HttpServlet {
     private String message;

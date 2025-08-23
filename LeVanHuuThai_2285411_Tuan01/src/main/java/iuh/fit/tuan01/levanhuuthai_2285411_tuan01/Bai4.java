@@ -11,6 +11,12 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/*
+ * @description
+ * @author: Huu Thai
+ * @date:
+ * @version: 1.0
+ */
 @WebServlet(name = "bai4", value = "/bai-4", initParams = {
         @WebInitParam(name = "username", value = "thai"),
 
@@ -36,6 +42,7 @@ public class Bai4 extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
         out.println("<h2>" + "Username: " + username + "</h2>");
         out.println("<h2>" + "Email: " + email + "</h2>");
+//        Dung context param
         out.println("<h2>" + "Context param: " + this.getServletContext().getInitParameter("context-param") + "</h2>");
         out.println("</body></html>");
 
