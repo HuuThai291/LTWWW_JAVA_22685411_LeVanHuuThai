@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <filter>
+        <filter-name>authenticationFilter</filter-name>
+        <filter-class>fit.iuh.edu.levanhuuthai_22685411_tuan02.bai1.AuthenticationFilter</filter-class>
+
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>thai</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>12345</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>authenticationFilter</filter-name>
+        <url-pattern>/login</url-pattern>
+    </filter-mapping>
+</web-app>
